@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{BE1DBDA7-1E05-4531-93D0-0FD2942D1C23}</ProjectGuid>
+    <ProjectGuid>{8D18C377-C2F5-4418-B16E-71D9CAD30034}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Laboratorio02</RootNamespace>
-    <AssemblyName>Laboratorio02</AssemblyName>
+    <RootNamespace>Lab02</RootNamespace>
+    <AssemblyName>Lab02</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="ContaCorrente.cs" />
     <Compile Include="ContaPoupanca.cs" />
+    <Compile Include="Contas.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
