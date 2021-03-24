@@ -61,7 +61,6 @@ namespace Lab02
             return 0;
         }
         public float Receber(float x)
-
         {
             return saldoAtual = saldoAtual + x;
         }
