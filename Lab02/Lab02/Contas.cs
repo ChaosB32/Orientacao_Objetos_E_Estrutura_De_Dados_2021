@@ -50,6 +50,7 @@ namespace Lab02
         {
 
             if (tipoConta == "ContaCorrente" && saldoAtual > 0)
+
             {
                 return saldoAtual = saldoAtual - x - (0.37f * (x / 100));
             }
@@ -60,6 +61,7 @@ namespace Lab02
             return 0;
         }
         public float Receber(float x)
+
         {
             return saldoAtual = saldoAtual + x;
         }
