@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Lab03
+namespace Lab03Ex05
 {
     class Program
     {

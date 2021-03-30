@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Lab03
+namespace Lab03Ex05
 {
     class ItemMenu
     {
