@@ -12,6 +12,7 @@ namespace Lab03
             Aperitivo salgadinho = new Aperitivo(5, "Salgadinho");
             Aperitivo salame = new Aperitivo(4, "Salame");
 
+
             ItemMenu[] cardapio = { cafe,cerveja,refrigerante,salgadinho,salame };
 
             Console.WriteLine("-----Cardápio-----");
