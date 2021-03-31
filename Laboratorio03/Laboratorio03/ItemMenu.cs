@@ -6,24 +6,18 @@ using System.Threading.Tasks;
 
 namespace Laboratorio03
 {
-    class ItemMenu
+    abstract class ItemMenu
     {
-        public ItemMenu (string nome)
+        public string Nome { get; private set; }
+
+        public ItemMenu(string nome)
         {
             Nome = nome;
         }
-
-        public string Nome { get; protected set; }
-
-
-        protected void ImprimirPreco()
+        public virtual void ImprimirNome()
         {
-
+            Console.WriteLine($">>>> {Nome}");
         }
-        protected void ImprimirNome()
-        {
-
-        }
-
+        public abstract void ImprimirPreco();
     }
 }

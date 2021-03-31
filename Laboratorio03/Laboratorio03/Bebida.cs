@@ -8,17 +8,22 @@ namespace Laboratorio03
 {
     class Bebida : ItemMenu
     {
-        public Bebida(float precoP, float precoM, float precoG) : base(nome)
+        public double PrecoPequena { get; set; }
+        public double PrecoMedia { get; set; }
+        public double PrecoGrande { get; set; }
+
+        public Bebida(string nome,double precoPequena, double precoMedia, double precoGrande):base(nome)
         {
-            PrecoP = precoP;
-            PrecoM = precoM;
-            PrecoG = precoG;
+            PrecoPequena = precoPequena;
+            PrecoMedia = precoMedia;
+            PrecoGrande = precoGrande;
         }
-
-        public float PrecoP { get; protected set; }
-        public float PrecoM { get; protected set; }
-        public float PrecoG { get; protected set; }
-
-
+        public override void ImprimirPreco()
+        {
+            ImprimirNome();
+            Console.WriteLine($"P: {PrecoPequena:C}");
+            Console.WriteLine($"M: {PrecoMedia:C}");
+            Console.WriteLine($"G: {PrecoGrande:C}");
+        }
     }
 }

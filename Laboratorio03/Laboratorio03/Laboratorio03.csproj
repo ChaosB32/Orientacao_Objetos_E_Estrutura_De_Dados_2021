@@ -45,6 +45,9 @@
   <ItemGroup>
     <Compile Include="Aperitivo.cs" />
     <Compile Include="Bebida.cs" />
+    <Compile Include="BebidaAlcoolica.cs" />
+    <Compile Include="Cigarro.cs" />
+    <Compile Include="IProdutoParaMaiores.cs" />
     <Compile Include="ItemMenu.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
