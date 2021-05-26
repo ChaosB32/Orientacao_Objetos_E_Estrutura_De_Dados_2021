@@ -6,7 +6,7 @@ namespace ListaEspera
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Fila com 5 números:");
+            Console.WriteLine("Fila com 4 números:");
             FilaEstatica minhaFila = new FilaEstatica(4);
             minhaFila.Enfileirar(5);
             minhaFila.Enfileirar(10);
