@@ -30,6 +30,10 @@ namespace ListaEX2
             Console.WriteLine("Percorrimento Pós-fixado:");
             PercorrimentoPosFixado(arvore59);
             Console.ReadLine();
+            RetornarQtdeDeNos(arvores);
+            Console.ReadLine();
+            RetornarMaiorValor(arvores);
+            Console.ReadLine();
         }
 
         static void PercorrimentoPreFixado(Arvore arvore)
@@ -60,6 +64,26 @@ namespace ListaEX2
                 PercorrimentoPosFixado(arvore.Direita);
                 Console.Write($"{arvore.Dado}   ");
             }
+        }
+        static void RetornarQtdeDeNos(List<int> arvores)
+        {
+            Console.WriteLine($"Tem {arvores.Count} nós na arvore");
+        }
+        static void RetornarMaiorValor(List<int> arvores)
+        {
+            if (arvores.Count == 0)
+            {
+                throw new InvalidOperationException("Empty list");
+            }
+            int max = int.MinValue;
+            foreach (int type in arvores)
+            {
+                if (type > max)
+                {
+                    max = type;
+                }
+            }
+            Console.WriteLine(max);
         }
     }
 }
