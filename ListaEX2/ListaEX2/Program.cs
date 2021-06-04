@@ -75,30 +75,30 @@ namespace ListaEX2
         {
             if (arvores.Count == 0)
             {
-                throw new InvalidOperationException("Empty list");
+                throw new InvalidOperationException("Lista Vazia");
             }
             int max = int.MinValue;
-            foreach (int type in arvores)
+            foreach (int nos in arvores)
             {
-                if (type > max)
+                if (nos > max)
                 {
-                    max = type;
+                    max = nos;
                 }
             }
-            Console.WriteLine(max);
+            Console.WriteLine($"O nó de maior número é o : {max} .");
         }
          static void RetornarValorSoma(List<int> arvores)
         {
             if (arvores.Count == 0)
             {
-                throw new InvalidOperationException("Empty list");
+                throw new InvalidOperationException("Lista Vazia");
             }
             int total = 0;
-            foreach (int type in arvores)
+            foreach (int nos in arvores)
             {
-                total = total + type;
+                total = total + nos;
             }
-            Console.WriteLine(total);
+            Console.WriteLine($"A soma de todos os nós é : {total} .");
         }
     }
 }
