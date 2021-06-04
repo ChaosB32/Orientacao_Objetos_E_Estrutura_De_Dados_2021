@@ -34,6 +34,8 @@ namespace ListaEX2
             Console.ReadLine();
             RetornarMaiorValor(arvores);
             Console.ReadLine();
+            RetornarValorSoma(arvores);
+            Console.ReadLine();
         }
 
         static void PercorrimentoPreFixado(Arvore arvore)
@@ -84,6 +86,19 @@ namespace ListaEX2
                 }
             }
             Console.WriteLine(max);
+        }
+         static void RetornarValorSoma(List<int> arvores)
+        {
+            if (arvores.Count == 0)
+            {
+                throw new InvalidOperationException("Empty list");
+            }
+            int total = 0;
+            foreach (int type in arvores)
+            {
+                total = total + type;
+            }
+            Console.WriteLine(total);
         }
     }
 }
