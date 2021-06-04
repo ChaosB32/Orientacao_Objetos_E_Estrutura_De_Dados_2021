@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace ListaEX2
 {
@@ -6,19 +7,20 @@ namespace ListaEX2
     {
         static void Main(string[] args)
         {
+            List<int> arvores = new List<int> { 59, 103, 48, 33, 51, 38, 79, 1, 235, 121, 223, 161 };
 
-            Arvore arvore161 = new Arvore(null, 161, null);
-            Arvore arvore223 = new Arvore(arvore161, 223, null);
-            Arvore arvore121 = new Arvore(null, 121, null);
-            Arvore arvore235 = new Arvore(arvore121, 235, arvore223);
-            Arvore arvore1 = new Arvore(null, 1, null);
-            Arvore arvore79 = new Arvore(null, 79, null);
-            Arvore arvore38 = new Arvore(arvore1, 38, null);
-            Arvore arvore51 = new Arvore(null, 51, null);
-            Arvore arvore33 = new Arvore(null, 33, arvore38);
-            Arvore arvore48 = new Arvore(arvore33, 48, arvore51);
-            Arvore arvore103 = new Arvore(arvore79, 103, arvore235);
-            Arvore arvore59 = new Arvore(arvore48, 59, arvore103);
+            Arvore arvore161 = new Arvore(null, arvores[11], null);
+            Arvore arvore223 = new Arvore(arvore161, arvores[10], null);
+            Arvore arvore121 = new Arvore(null, arvores[9], null);
+            Arvore arvore235 = new Arvore(arvore121, arvores[8], arvore223);
+            Arvore arvore1 = new Arvore(null, arvores[7], null);
+            Arvore arvore79 = new Arvore(null, arvores[6], null);
+            Arvore arvore38 = new Arvore(arvore1, arvores[5], null);
+            Arvore arvore51 = new Arvore(null, arvores[4], null);
+            Arvore arvore33 = new Arvore(null, arvores[3], arvore38);
+            Arvore arvore48 = new Arvore(arvore33, arvores[2], arvore51);
+            Arvore arvore103 = new Arvore(arvore79, arvores[1], arvore235);
+            Arvore arvore59 = new Arvore(arvore48, arvores[0], arvore103);
             Console.WriteLine("Percorrimento Pré-fixado:");
             PercorrimentoPreFixado(arvore59);
             Console.WriteLine();
